@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Study Groups - JustStudy</title>
+        <link rel="stylesheet" href="./css/groups.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+
+    <body>
+        <div id="first-div">
+            <h1>Study Groups</h1>
+        </div>
+
+        <nav class="nav-section">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#" class="active"><i class="fas fa-users"></i> Groups</a></li>
+                <li><a href="registration.html"><i class="fas fa-user-plus"></i> Registration</a></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section class="create-group">
+                <h2>Create New Study Group</h2>
+                <form id="createGroupForm" onsubmit="return handleGroupCreation(event)">
+                    <div class="form-group">
+                        <label for="groupName">Group Name</label>
+                        <input type="text" id="groupName" required placeholder="Enter group name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="groupTopic">Topic</label>
+                        <select id="groupTopic" required>
+                            <option value="">Select a topic</option>
+                            <option value="mathematics">Mathematics</option>
+                            <option value="physics">Physics</option>
+                            <option value="chemistry">Chemistry</option>
+                            <option value="biology">Biology</option>
+                            <option value="computer-science">Computer Science</option>
+                            <option value="literature">Literature</option>
+                            <option value="history">History</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="groupDescription">Description</label>
+                        <textarea id="groupDescription" required placeholder="Describe your study group"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="maxMembers">Maximum Members</label>
+                        <input type="number" id="maxMembers" min="2" max="20" value="10">
+                    </div>
+
+                    <button type="submit" class="create-btn">Create Group</button>
+                </form>
+            </section>
+
+            <section class="existing-groups">
+                <h2>Available Study Groups</h2>
+                <div class="group-filters">
+                    <input 
+                        type="text" 
+                        class="filter-input" 
+                        placeholder="Search groups..."
+                        id="searchGroups"
+                    >
+                    <select class="filter-input" id="filterTopic">
+                        <option value="">All Topics</option>
+                        <option value="mathematics">Mathematics</option>
+                        <option value="physics">Physics</option>
+                        <option value="computer-science">Computer Science</option>
+                        <option value="literature">Literature</option>
+                        <option value="history">History</option>
+                    </select>
+                </div>
+
+                <div class="group-grid">
+                    <!-- Sample group card -->
+                    <div class="group-card">
+                        <h3>Calculus Study Group</h3>
+                        <p class="topic"><i class="fas fa-book"></i> Mathematics</p>
+                        <p class="members"><i class="fas fa-users"></i> 5/10 members</p>
+                        <p class="description">Weekly calculus problem-solving sessions and concept discussions.</p>
+                        <button class="join-btn">Join Group</button>
+                    </div>
+
+                    <div class="group-card">
+                        <h3>Python Programming</h3>
+                        <p class="topic"><i class="fas fa-laptop-code"></i> Computer Science</p>
+                        <p class="members"><i class="fas fa-users"></i> 8/12 members</p>
+                        <p class="description">Learn Python programming through practical projects and peer coding.</p>
+                        <button class="join-btn">Join Group</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script>
+            function handleGroupCreation(event) {
+                event.preventDefault();
+                
+                const groupName = document.getElementById('groupName').value;
+                const groupTopic = document.getElementById('groupTopic').value;
+                const groupDescription = document.getElementById('groupDescription').value;
+                const maxMembers = document.getElementById('maxMembers').value;
+
+                // Here you would typically make an API call to your backend
+                console.log('Creating group:', {
+                    name: groupName,
+                    topic: groupTopic,
+                    description: groupDescription,
+                    maxMembers: maxMembers
+                });
+
+                alert('Group created successfully!');
+                event.target.reset();
+                return false;
+            }
+
+            // Search functionality
+            document.getElementById('searchGroups').addEventListener('input', function(e) {
+                // Implement search functionality here
+            });
+
+            // Filter functionality
+            document.getElementById('filterTopic').addEventListener('change', function(e) {
+                // Implement filter functionality here
+            });
+        </script>
+    </body>
+</html>
+
+

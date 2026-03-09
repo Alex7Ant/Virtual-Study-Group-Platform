@@ -1,0 +1,28 @@
+{
+  "name": "virtual-study-group-platform",
+  "version": "1.0.3",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Alexa",
+  "license": "ISC",
+  "description": "virtual study group platform ",
+  "repository": {
+    "type": "git",
+    "url": "Virtual-Study-Group-Platform"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.21.2",
+    "http": "^0.0.1-security",
+    "io": "^1.5.3",
+    "mysql2": "^3.14.1",
+    "sequelize": "^6.30.0",
+    "socket": "^0.14.67"
+  }
+}

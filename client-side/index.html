@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="JustStudy - Your trusted and reliable virtual study group platform for students of all ages">
+        <meta name="author" content="Alexandre Anthony">
+        <title>JustStudy - Virtual Study Group Platform</title>
+            <link rel="stylesheet" href="./css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        </head>
+
+        <body>
+        <div id="first-div">
+                <h1>JustStudy</h1>
+            </div>
+
+        <nav class="nav-section">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="/client-side/groups.html"><i class="fas fa-users"></i> Groups</a></li>
+                <li><a href="/client-side/group-chat.html"><i class="fas fa-comments"></i> Group Chat</a></li>
+                <li><a href="/client-side/registration.html"><i class="fas fa-user-plus"></i> Registration</a></li>
+                <li><a href="/client-side/login.html"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                <li><a href="#services"><i class="fas fa-info-circle"></i> Services</a></li>
+                    </ul>
+        </nav>
+
+        <main>
+            <section class="hero">
+                <h2>Your Trusted Study Partner</h2>
+                <p>Connect, collaborate, and excel in your studies with peers from around the world.</p>
+                <a href="registration.html" class="cta-button">Get Started</a>
+            </section>
+
+            <section id="services">
+                <h2>Our Services</h2>
+                <div class="services-container">
+                     <div class="service-item">
+                        <img src="/images/proxy-image.jpg" alt="Students creating study groups" loading="lazy">
+                        <p><strong>Group Creation</strong></p>
+                        <p>Create and join study groups tailored to your specific courses and interests.</p>
+                    </div>
+
+                    <div class="service-item">
+                        <img src="/images/Group discussion.jpg" alt="Students in a group discussion">
+                        <p><strong>Real-time Chat</strong></p>
+                        <p>Engage in dynamic discussions, share resources, and collaborate effectively.</p>
+                    </div>
+        
+                    <div class="service-item">
+                        <img src="/images/Membership plan.png" alt="Premium membership features">
+                        <p><strong>Premium Features</strong></p>
+                        <p>Unlock advanced features with our affordable premium membership plans.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features">
+                <h2>Why Choose JustStudy?</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <h3>Community-Driven</h3>
+                        <p>Join a thriving community of dedicated learners</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-clock"></i>
+                        <h3>24/7 Access</h3>
+                        <p>Study anytime, anywhere with our platform</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Secure Platform</h3>
+                        <p>Your privacy and data security are our top priority</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="connect-header">Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="connect-header">Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 JustStudy. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+        <script>
+            // Add smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
+        </body>
+    </html>

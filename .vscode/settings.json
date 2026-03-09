@@ -1,0 +1,48 @@
+{
+    "C_Cpp.default.compilerPath": "C:/MinGW/bin/gcc.exe",
+    "liveServer.settings.port": 5502,
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "username": "alex",
+            "name": "test",
+            "database": "Tour du Togo",
+            "askForPassword": true
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "Testing",
+            "database": "Tour du Togo",
+            "username": "alex",
+            "askForPassword": true
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50000,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "JustStudy ",
+            "username": "root ",
+            "database": "JustStudy ",
+            "connectionTimeout": 5
+        }
+    ]
+}

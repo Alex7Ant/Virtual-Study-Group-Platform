@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JustStudy - Group Chat</title>
+    <link rel="stylesheet" href="/client-side/css/styles.css">
+    <link rel="stylesheet" href="/client-side/css/group-chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">JustStudy</a>
+        </div>
+        
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="groups.html"><i class="fas fa-users"></i> Study Groups</a></li>
+                <li><a href="group-chat.html" class="active"><i class="fas fa-comments"></i> Group Chat</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i> Profile</a></li>
+            </ul>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="chat-container">
+        <div class="chat-sidebar">
+            <div class="sidebar-header">
+                <h2>Study Groups</h2>
+                <button class="create-group-btn">
+                    <i class="fas fa-plus"></i> New Group
+                </button>
+            </div>
+            <div class="search-filter-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchGroups" placeholder="Search groups...">
+                </div>
+                <label for="filterTopic" class="sr-only">Filter by topic</label>
+                <select id="filterTopic" aria-label="Filter by topic">
+                    <option value="all">All Topics</option>
+                    <option value="web">Web Development</option>
+                    <option value="math">Mathematics</option>
+                    <option value="science">Science</option>
+                </select>
+            </div>
+            <div class="group-list">
+                <div class="group-item active" data-topic="web">
+                    <div class="group-avatar">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="group-info">
+                        <h3>Web Development</h3>
+                        <p>Last message: 2m ago</p>
+                    </div>
+                </div>
+                <div class="group-item" data-topic="math">
+                    <div class="group-avatar">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <div class="group-info">
+                        <h3>Mathematics</h3>
+                        <p>Last message: 5m ago</p>
+                    </div>
+                </div>
+                <div class="group-item" data-topic="science">
+                    <div class="group-avatar">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="group-info">
+                        <h3>Science</h3>
+                        <p>Last message: 10m ago</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-main">
+            <div class="chat-header">
+                <div class="group-details">
+                    <div class="group-avatar">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div>
+                        <h2>Web Development</h2>
+                        <p>5 members online</p>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <button title="Start video call"><i class="fas fa-video"></i></button>
+                    <button title="Start voice call"><i class="fas fa-phone"></i></button>
+                    <button title="More options"><i class="fas fa-ellipsis-v"></i></button>
+                </div>
+            </div>
+
+            <div class="chat-messages">
+                <div class="message received">
+                    <div class="message-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="message-content">
+                        <div class="message-info">
+                            <span class="sender">John Doe</span>
+                            <span class="time">10:30 AM</span>
+                        </div>
+                        <p>Hey everyone! How's the project going?</p>
+                    </div>
+                </div>
+
+                <div class="message sent">
+                    <div class="message-content">
+                        <div class="message-info">
+                            <span class="sender">You</span>
+                            <span class="time">10:32 AM</span>
+                        </div>
+                        <p>I've completed the frontend part. Working on the backend now.</p>
+                    </div>
+                </div>
+
+                <div class="message received">
+                    <div class="message-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="message-content">
+                        <div class="message-info">
+                            <span class="sender">Jane Smith</span>
+                            <span class="time">10:33 AM</span>
+                        </div>
+                        <p>Great! I'll start working on the database schema.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input">
+                <button class="attachment-btn" title="Attach file">
+                    <i class="fas fa-paperclip"></i>
+                </button>
+                <input type="text" placeholder="Type your message...">
+                <button class="send-btn" title="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="group-chat.js"></script>
+</body>
+</html> 
