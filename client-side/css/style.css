@@ -122,6 +122,11 @@ footer {
     color: white;
     padding: 20px 0;
     margin-top: 60px;
+    list-style: none;
+}
+
+.footer-section ul li{
+    list-style: none;
 }
 
 .connect-header{
